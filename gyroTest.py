@@ -12,8 +12,10 @@ while True:
     y = abs(y)
     z = abs(z)
 
-    if x > 1 or y > 1 or z > 1:
+    if x > 1.02 or y > 1.02 or z > 1.02:
         sense.show_letter("!", red)
+        print("Movement detected!")
     else:
         sense.clear()
+        print("No Movement detected...")
 
